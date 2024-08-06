@@ -2,7 +2,8 @@
 // import dynamic from "next/dynamic";
 
 // const AdminApp = dynamic(() => import("@/components/AdminApp"), { ssr:false })
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/dist/next";
+import { Analytics } from "@vercel/analytics/dist/react";
 import "./page.scss";
 
 export default function Home() {

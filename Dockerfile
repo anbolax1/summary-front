@@ -1,5 +1,5 @@
 # Используем официальный образ Node.js
-FROM node:16
+FROM node:18
 
 # Устанавливаем рабочую директорию
 WORKDIR /app
@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Собираем проект
-RUN npm run build
+#RUN npm run build
 
 # Указываем порт, который будет использоваться в приложении
 EXPOSE 3000

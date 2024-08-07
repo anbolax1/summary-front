@@ -12,10 +12,10 @@ export default function Layout({children}:any) {
             </div>
             {children}
             <div className="buttons-grid">
-                <BottomButton props={{title: "Резюме", description: "Посмотрите или скачайте резюме в формате PDF", endpoint: 'summary'}}/>
-                <BottomButton props={{title: "Github", description: "Ознакомьтесь с моим профилем на github"}}/>
-                <BottomButton props={{title: "Навыки", description: "Узнайте, какими навыками я владею"}}/>
-                <BottomButton props={{title: "FAQ", description: "Узнайте ответы на часто задаваемые вопросы"}}/>
+                <BottomButton title="Резюме" description="Посмотрите или скачайте резюме в формате PDF" endpoint='summary'/>
+                <BottomButton title="Github" description="Ознакомьтесь с моим профилем на github"/>
+                <BottomButton title="Навыки" description="Узнайте, какими навыками я владею"/>
+                <BottomButton title="FAQ" description="Узнайте ответы на часто задаваемые вопросы"/>
             </div>
         </main>
     );

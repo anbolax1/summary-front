@@ -1,0 +1,20 @@
+.main-text {
+  font-size: clamp(2rem, 6vw, 6rem);
+  text-align: center;
+}
+
+.buttons-grid {
+  margin-bottom: 8rem; /* mb-32 */
+  display: grid; /* grid */
+  text-align: center; /* text-center */
+}
+
+@media (min-width: 1024px) { /* lg breakpoint */
+  .buttons-grid {
+    margin-bottom: 0; /* lg:mb-0 */
+    width: 100%; /* lg:w-full */
+    max-width: 80rem; /* lg:max-w-5xl */
+    grid-template-columns: repeat(4, 1fr); /* lg:grid-cols-4 */
+    text-align: left; /* lg:text-left */
+  }
+}

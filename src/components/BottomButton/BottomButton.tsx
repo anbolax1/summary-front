@@ -3,8 +3,8 @@ import {IBottomButton} from "@/src/types/BottomButton";
 import "./BottomButton.scss";
 
 export default function BottomButton({title, description, endpoint}: IBottomButton) {
-    const url = `${process.env.NEXT_PUBLIC_BASE_URL}/${endpoint}`;
-    // let url = `/${endpoint}`;
+    // const url = `${process.env.NEXT_PUBLIC_BASE_URL}/${endpoint}`;
+    let url = `/${endpoint}`;
     return (
         <Link
             href={url}
